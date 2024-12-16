@@ -1,9 +1,12 @@
 {
-  "name": "@ai-assist/duckdb",
+  "name": "@react-ai-assist/duckdb",
   "version": "0.0.1",
   "description": "The DuckDB addon for SQL query with react-ai-assist",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "declaration": "tsc --emitDeclarationOnly --outDir dist",
     "build": "node esbuild.config.js",

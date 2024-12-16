@@ -1,17 +1,19 @@
 {
-  "name": "@ai-assist/geoda",
+  "name": "@react-ai-assist/geoda",
   "version": "0.0.1",
   "description": "The GeoDa addon for spatial data analysis with react-ai-assist",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "declaration": "tsc --emitDeclarationOnly --outDir dist",
     "build": "node esbuild.config.js",
     "prepublish": "yarn build && yarn declaration"
   },
   "dependencies": {
-    "geoda-wasm": "^0.0.2",
-    "react-ai-assist": "^0.0.25"
+    "geoda-wasm": "^0.0.2"
   },
   "peerDependencies": {
     "react-ai-assist": "^0.0.25"
@@ -19,6 +21,7 @@
   "devDependencies": {
     "@types/node": "^20.0.0",
     "esbuild": "^0.24.0",
+    "react-ai-assist": "^0.0.25",
     "typescript": "^5.0.0"
   }
 }
